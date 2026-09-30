@@ -25,10 +25,8 @@ public class PatientController {
     @GetMapping
     @Operation(summary = "Get all patients")
     public ResponseEntity<List<PatientResponseDTO>> getPatients() {
-        // Get filtered dto based patients:
-        List<PatientResponseDTO> patients = patientService.getPatients();
-        // return patients:
-        return ResponseEntity.ok().body(patients);
+                List<PatientResponseDTO> patients = patientService.getPatients();
+                return ResponseEntity.ok().body(patients);
     }
 
     @PostMapping
@@ -36,6 +34,12 @@ public class PatientController {
     public ResponseEntity<PatientResponseDTO> createPatient(@Valid @RequestBody PatientRequestDTO patientRequestDTO) {
         PatientResponseDTO patientResponseDTO = patientService.createPatient(patientRequestDTO);
         return ResponseEntity.ok().body(patientResponseDTO);
+    }
+
+    @GetMapping("/{id}")
+    @Operation(summary = "Get a patient by id")
+    public ResponseEntity<PatientResponseDTO> getPatient(@PathVariable UUID id) {
+        return ResponseEntity.ok().body(patientService.getPatient(id));
     }
 
     @DeleteMapping("/{id}")
