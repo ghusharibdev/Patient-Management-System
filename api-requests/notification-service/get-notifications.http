@@ -1,0 +1,4 @@
+GET http://localhost:4003/notifications
+
+###
+GET http://localhost:4003/notifications/00000000-0000-0000-0000-000000000000

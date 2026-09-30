@@ -1,0 +1,10 @@
+POST http://localhost:4002/auth/login
+Content-Type: application/json
+
+{
+  "username": "dr.ayesha",
+  "password": "secret123"
+}
+
+###
+GET http://localhost:4002/auth/validate?token=eyJhbGciOiJIUzI1NiJ9...

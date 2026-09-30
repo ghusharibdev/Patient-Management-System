@@ -1,0 +1,4 @@
+GET http://localhost:4004/billing-accounts
+
+###
+GET http://localhost:4004/billing-accounts/patient/00000000-0000-0000-0000-000000000000

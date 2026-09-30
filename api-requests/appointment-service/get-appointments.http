@@ -1,0 +1,4 @@
+GET http://localhost:4001/appointments
+
+###
+GET http://localhost:4001/appointments/patient/00000000-0000-0000-0000-000000000000

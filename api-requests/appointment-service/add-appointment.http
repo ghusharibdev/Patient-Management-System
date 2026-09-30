@@ -1,0 +1,9 @@
+POST http://localhost:4001/appointments
+Content-Type: application/json
+
+{
+  "patientId": "00000000-0000-0000-0000-000000000000",
+  "doctorName": "Dr. Ayesha Khan",
+  "appointmentDate": "2026-10-15",
+  "reason": "Routine checkup"
+}
