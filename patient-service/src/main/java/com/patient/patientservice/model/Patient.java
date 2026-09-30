@@ -33,8 +33,6 @@ public class Patient {
     @Column(nullable = false, updatable = false)
     private LocalDateTime timestamp;
 
-    //Getter setters :)
-
     public UUID getId() {
         return id;
     }
